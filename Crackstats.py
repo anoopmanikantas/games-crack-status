@@ -81,11 +81,11 @@ if __name__ == '__main__':
     print("WELCOME!".center(50, '-'))
     print("Standby...")
 
-    path = r'Enter chrome driver's path'
+    path = r"Enter chrome driver's path"
     chrome_opt = Options()
     chrome_opt.add_argument("--headless")
     chrome_opt.add_argument("--window-size=1920,1080")
-    chrome_opt.binary_location = r'Enter chrome browser's path'
+    chrome_opt.binary_location = r"Enter chrome browser's path"
     driver = webdriver.Chrome(path, options=chrome_opt)
     driver.get('https://crackwatch.com/')
 
